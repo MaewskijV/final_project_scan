@@ -1,0 +1,48 @@
+.auth {
+    padding: 100px 0;
+
+    @media(max-width: 960px) {
+        padding: 60px 0;
+    } 
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 960px) {
+            flex-direction: column;
+        }
+    }
+
+    &__inner {
+        width: 48%;
+
+        @media(max-width: 960px) {
+            width: 100%;
+        }
+    }
+
+    &__bg {
+        height: 420px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url("./../../../public/images/svg/bg-auth.svg");
+
+        &--desktop {
+            @media(max-width: 960px) {
+                display: none;
+            }
+        }
+
+        &--mobile {
+            display: none;
+            
+            @media(max-width: 960px) {
+                display: block;
+                margin-top: 20px;
+            }
+        }
+    }
+
+}

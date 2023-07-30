@@ -1,0 +1,25 @@
+.tariff {
+    padding: 80px 0;
+
+    @media(max-width: 960px) {
+        padding: 60px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 960px) {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        width: 32%;
+
+        @media(max-width: 960px) {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+    }
+}

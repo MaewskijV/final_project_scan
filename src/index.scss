@@ -1,0 +1,35 @@
+@import "./node_modules/swiper/swiper-bundle";
+
+@import "./style/mixin/fonts";
+
+@import "./style/normilize/reset";
+@import "./style/fonts";
+
+@import "./style/setting/variables";
+@import "./style/setting/main";
+
+@import "./style/elements/m-title";
+@import "./style/elements/s-title";
+@import "./style/elements/sub-title";
+@import "./style/elements/header";
+@import "./style/elements/footer";
+@import "./style/elements/nav";
+@import "./style/elements/btn";
+@import "./style/elements/card";
+@import "./style/elements/sl-arrows";
+@import "./style/elements/form";
+@import "./style/elements/input";
+@import "./style/elements/label";
+@import "./style/elements/checkbox";
+@import "./style/elements/n-item";
+@import "./style/elements/preloader";
+@import "./style/elements/mini-preloader";
+@import "./style/elements/error";
+
+@import "./style/sections/main";
+@import "./style/sections/why-me";
+@import "./style/sections/tariff";
+@import "./style/sections/auth";
+@import "./style/sections/search";
+@import "./style/sections/res";
+@import "./style/sections/not-found";

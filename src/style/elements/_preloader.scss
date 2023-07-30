@@ -1,0 +1,34 @@
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: 0.3s;
+
+    &.hide {
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        z-index: -1;
+    }
+
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: right;
+    }
+
+    &__element {
+        width: 100px;
+        height: 100px;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='margin: auto; background: rgba(255, 255, 255, 0); display: block;' width='200px' height='200px' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid'%3e%3cg transform='rotate(0 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%233c0f0f'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.9166666666666666s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(30 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%23f91a10'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.8333333333333334s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(60 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%23e46b43'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.75s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(90 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%23edb195'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.6666666666666666s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(120 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%232aa7c9'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.5833333333333334s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(150 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%2306628d'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.5s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(180 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%2304284d'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.4166666666666667s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(210 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%233c0f0f'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.3333333333333333s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(240 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%23f91a10'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.25s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(270 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%23e46b43'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.16666666666666666s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(300 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%23edb195'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.08333333333333333s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3cg transform='rotate(330 50 50)'%3e%3crect x='46.5' y='25.5' rx='3.5' ry='3.5' width='7' height='7' fill='%232aa7c9'%3e%3canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='0s' repeatCount='indefinite'%3e%3c/animate%3e%3c/rect%3e%3c/g%3e%3c/svg%3e");
+    }
+}

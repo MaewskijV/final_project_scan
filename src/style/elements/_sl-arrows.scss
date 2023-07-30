@@ -1,0 +1,58 @@
+.sl-arrows {
+    
+    &__arrow {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background-color: $subActiveOne;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: 100% 100%;
+        mask-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3e%3cpath fill='%23364450' d='M7.703 22.997a1.79 1.79 0 0 1-1.088-.36 1.6 1.6 0 0 1-.419-.476 1.453 1.453 0 0 1-.12-1.197c.067-.197.175-.38.318-.538l7.615-8.404-7.343-8.42a1.531 1.531 0 0 1-.31-.543 1.452 1.452 0 0 1 .138-1.198c.107-.18.252-.34.427-.47.176-.143.382-.25.605-.316a1.836 1.836 0 0 1 1.354.128c.204.106.382.25.523.423l8.21 9.408c.25.28.387.632.387.995 0 .364-.137.715-.387.996l-8.5 9.408c-.17.19-.386.34-.631.438a1.827 1.827 0 0 1-.78.126Z'/%3e%3c/svg%3e ");
+        opacity: 0.9;
+        transition: $tr;
+
+        &:hover {
+            opacity: 1;
+            background-color: $active;
+        }
+
+        &:first-child {
+            left: -26px;
+            transform: translateY(-15px) rotate(180deg);
+
+            @media(max-width: 1360px) {
+                left: -4px;
+            }
+
+            @media(max-width: 960px) {
+                left: 4px;
+            }
+        }
+
+        &:last-child {
+            right: -26px;
+
+            @media(max-width: 1360px) {
+                right: -6px;
+            }
+
+            @media(max-width: 960px) {
+                right: 4px;
+            }
+        }
+    }
+
+    .swiper-button-disabled {
+        opacity: 0.4;
+
+        &:hover {
+            background-color: $subActiveOne;
+        }
+    }
+}

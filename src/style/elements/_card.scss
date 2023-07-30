@@ -1,0 +1,178 @@
+.card {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+    &.active {
+        .card__btn {
+            background-color: #D2D2D2;
+        }
+
+        .card__info {
+            display: block;
+        }
+    }
+
+    &--beginner {
+        border: 1px solid $subActiveTwo;
+        .card__header {
+            background-color: $subActiveTwo;
+        }
+    }
+
+    &--PRO {
+        border: 1px solid $subActiveOne;
+        .card__header {
+            background-color: $subActiveOne;
+        }
+    }
+
+    &--business {
+        border: 1px solid $black;
+        .card__header {
+            background-color: $black;
+            color: $white;
+        }
+    }
+
+    &__header {
+        padding: 28px;
+        position: relative;
+        border-radius: 10px 10px 0 0;
+        padding-right: 100px;
+        min-height: 140px;
+    }
+
+    &__body {
+        position: relative;
+        padding: 170px 20px 120px;
+    }
+
+    &__title {
+        font-weight: 500;
+        margin-bottom: 6px;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.01em;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+    }
+
+    &__ico {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 92px;
+        height: 92px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        color: $white;
+        background-color: $active;
+        border-radius: 20px;
+        padding: 4px 12px;
+        line-height: 1;
+        font-size: 14px;
+        display: inline-block;
+        margin-right: 0;
+        display: none;
+    }
+
+    &__price {
+        position: relative;
+        display: inline-block;
+        margin-right: 16px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.01em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--old {
+            opacity: 0.5;
+            font-size: 25px;
+            line-height: 30px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #000;
+            }
+        }
+    }
+
+    &__wrap-price {
+        position: absolute;
+        top: 44px;
+        left: 20px;
+        width: calc( 100% - 40px );
+        margin-bottom: 40px;
+    }
+
+    &__sub-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        padding-left: 30px;
+    }
+
+    &__item {
+        margin-bottom: 8px;
+        position: relative;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            left: -28px;
+            background-size: 100% 100%;
+            background-image: url("./../../../public/images/svg/ico-ok-item.svg");
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        padding-left: 12px;
+        padding-right: 12px;
+        bottom: 24px;
+        font-size: 18px;
+        left: 20px;
+        width: calc(100% - 40px);
+
+        @media(max-width: 960px) {
+            font-size: 16px;
+        }
+    }
+}

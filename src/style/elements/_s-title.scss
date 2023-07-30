@@ -1,0 +1,14 @@
+.s-title {
+    font-family: "Ferry";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    margin-bottom: 64px;
+
+    @media(max-width: 960px) {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+}

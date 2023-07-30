@@ -1,0 +1,79 @@
+.nav {
+    &.active {
+
+        @media (max-width: 960px) {
+            .nav__btn {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='%23029491' d='M24 2.417 21.583 0 12 9.583 2.417 0 0 2.417 9.583 12 0 21.583 2.417 24 12 14.417 21.583 24 24 21.583 14.417 12 24 2.417Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='%23fff' d='M0 0h24v24H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+            }
+
+            .nav__list {
+                display: flex;
+            }
+        }
+    }
+
+    &__list {
+        @media (max-width: 960px) {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 80px;
+            padding: 26px 0;
+            z-index: 10;
+            left: 50%;
+            width: calc(100% - 20px);
+            border-radius: 12px;
+            transform: translateX(-50%);
+            background-color: $white;
+        }
+    }
+
+    &__item {
+        padding: 0 20px;
+        display: inline-block;
+
+        @media (max-width: 960px) {
+            margin: 12px;
+            font-size: 20px;
+        }
+
+        &--out {
+            display: none;
+
+            @media(max-width: 960px) {
+                display: block;
+                
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    &__link {
+        border-bottom: 1px solid transparent;
+        color: $black;
+        padding-top: 6px;
+        line-height: 1;
+        padding-bottom: 6px;
+        transition: $tr;
+
+        &:hover {
+            border-bottom: 1px solid $black;
+        }
+    }
+
+    &__btn {
+        width: 30px;
+        height: 30px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='25' fill='none' viewBox='0 0 30 25'%3e%3cpath fill='%23029491' d='M0 0h30v5H0zm0 10h30v5H0zm0 10h30v5H0z'/%3e%3c/svg%3e");
+
+        @media (min-width: 960px) {
+            display: none;
+        }
+    }
+}

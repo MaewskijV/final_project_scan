@@ -1,0 +1,18 @@
+.input,
+select {
+    border: 1px solid #c7c7c7;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: $tr;
+    width: 100%;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border: 1px solid $active;
+    }
+
+    &--error {
+        border: 1px solid rgb(190, 0, 0) !important;
+    }
+}

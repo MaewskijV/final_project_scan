@@ -1,0 +1,34 @@
+.checkbox {
+    user-select: none;
+    display: none;
+
+    &:disabled ~ .ch-label {
+        opacity: 0.3;
+        cursor: auto;
+    }
+
+    & ~ .ch-label {
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        padding-left: 32px;
+        font-size: 16px;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 20px;
+            height: 20px;
+            border: 1px solid $black;
+        }
+    }
+
+    &:checked ~ .ch-label {
+        &:before {
+            background-size: 100% 100%;
+            background-image: url("./../../../public/images/svg/ico-ok-item.svg");
+        }
+    }
+}
